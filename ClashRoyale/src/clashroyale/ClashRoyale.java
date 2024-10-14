@@ -28,7 +28,20 @@ public class ClashRoyale {
         System.out.println("Rango de ataque:" + t1.getRangoAtaque());
         System.out.println("Velocidad de ataque:" + t1.getVelocidadAtaque());
         
+        t1.setPuntosSalud(3);
+        System.out.println("Puntos de salud:" + t1.getPuntosSalud());
         
+        t1.setDanio(3);
+        System.out.println("Danio:" + t1.getDanio());
+        
+        t1.setVelocidadMovimiento(3);
+        System.out.println("Velocidad de movimiento:" + t1.getVelocidadMovimiento());
+        
+        t1.setRangoAtaque(3);
+        System.out.println("Rango de ataque:" + t1.getRangoAtaque());
+
+        t1.setVelocidadAtaque(3);
+        System.out.println("Velocidad de ataque:" + t1.getVelocidadAtaque());
 
     }
     
