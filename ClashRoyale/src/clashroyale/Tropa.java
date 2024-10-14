@@ -20,5 +20,49 @@ public class Tropa {
     private int velocidadMovimiento;
     private int rangoAtaque;
     private int velocidadAtaque;
+
+    public int getPuntosSalud() {
+        return puntosSalud;
+    }
+
+    public void setPuntosSalud(int puntosSalud) {
+        this.puntosSalud = puntosSalud;
+    }
+
+    public int getDanio() {
+        return danio;
+    }
+
+    public void setDanio(int danio) {
+        this.danio = danio;
+    }
+
+    public int getVelocidadMovimiento() {
+        return velocidadMovimiento;
+    }
+
+    public void setVelocidadMovimiento(int velocidadMovimiento) {
+        this.velocidadMovimiento = velocidadMovimiento;
+    }
+
+    public int getRangoAtaque() {
+        return rangoAtaque;
+    }
+
+    public void setRangoAtaque(int rangoAtaque) {
+        this.rangoAtaque = rangoAtaque;
+    }
+
+    public int getVelocidadAtaque() {
+        return velocidadAtaque;
+    }
+
+    public void setVelocidadAtaque(int velocidadAtaque) {
+        this.velocidadAtaque = velocidadAtaque;
+    }
+    
+    
+    
+    
     
 }
