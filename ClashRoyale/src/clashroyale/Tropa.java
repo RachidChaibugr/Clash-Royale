@@ -76,6 +76,12 @@ public class Tropa {
     public Tropa(Tropa otro){
         this(otro.puntosSalud, otro.danio, otro.velocidadMovimiento, otro.rangoAtaque, otro.velocidadAtaque);
     }
+
+    @Override
+    public String toString() {
+        return "Tropa{" + "puntosSalud=" + puntosSalud + ", danio=" + danio + ", velocidadMovimiento=" + velocidadMovimiento + ", rangoAtaque=" + rangoAtaque + ", velocidadAtaque=" + velocidadAtaque + '}';
+    }
+    
     
     
 }
