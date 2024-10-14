@@ -60,9 +60,22 @@ public class Tropa {
     public void setVelocidadAtaque(int velocidadAtaque) {
         this.velocidadAtaque = velocidadAtaque;
     }
+
+    public Tropa(int puntosSalud, int danio, int velocidadMovimiento, int rangoAtaque, int velocidadAtaque) {
+        this.puntosSalud = puntosSalud;
+        this.danio = danio;
+        this.velocidadMovimiento = velocidadMovimiento;
+        this.rangoAtaque = rangoAtaque;
+        this.velocidadAtaque = velocidadAtaque;
+    }
     
+    public Tropa(){
+        this(PUNTOS_SALUD,DANIO,VELOCIDAD_MOVIMIENTO,RANGO_ATAQUE,VELOCIDAD_ATAQUE);
+    }
     
-    
+    public Tropa(Tropa otro){
+        this(otro.puntosSalud, otro.danio, otro.velocidadMovimiento, otro.rangoAtaque, otro.velocidadAtaque);
+    }
     
     
 }
