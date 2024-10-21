@@ -66,9 +66,9 @@ public class Mazo {
         StringBuilder sb = new StringBuilder();
         sb.append("Mazo{");
         sb.append("mezclado=").append(mezclado);
-        sb.append(", mazo=");
+        sb.append(", mazo=\n");
         for(Object carta : mazo){
-            sb.append(carta.toString());
+            sb.append(carta.toString()).append("\n");
         }
         sb.append('}');
         return sb.toString();
