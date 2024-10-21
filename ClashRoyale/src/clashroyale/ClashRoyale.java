@@ -4,6 +4,9 @@
  */
 package clashroyale;
 
+import model.Estructura;
+import model.Tropa;
+
 /**
  *
  * @author Rachi
@@ -14,9 +17,9 @@ public class ClashRoyale {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Tropa t1 = new Tropa();
-        Tropa t2 = new Tropa(2,2,2,2,2);
-        Tropa t3 = new Tropa(t2);
+        Estructura t1 = new Estructura();
+        Estructura t2 = new Estructura(2,2,2,2,2);
+        Estructura t3 = new Estructura(t2);
         
         System.out.println(t1);
         System.out.println(t2);
@@ -24,7 +27,7 @@ public class ClashRoyale {
         
         System.out.println("Puntos de salud:" + t1.getPuntosSalud());
         System.out.println("Danio:" + t1.getDanio());
-        System.out.println("Velocidad de movimiento:" + t1.getVelocidadMovimiento());
+        System.out.println("Perdida de salud:" + t1.getPerdidaVida());
         System.out.println("Rango de ataque:" + t1.getRangoAtaque());
         System.out.println("Velocidad de ataque:" + t1.getVelocidadAtaque());
         
@@ -34,8 +37,8 @@ public class ClashRoyale {
         t1.setDanio(3);
         System.out.println("Danio:" + t1.getDanio());
         
-        t1.setVelocidadMovimiento(3);
-        System.out.println("Velocidad de movimiento:" + t1.getVelocidadMovimiento());
+        t1.setPerdidaVida(3);
+        System.out.println("Perdida de salud:" + t1.getPerdidaVida());
         
         t1.setRangoAtaque(3);
         System.out.println("Rango de ataque:" + t1.getRangoAtaque());
