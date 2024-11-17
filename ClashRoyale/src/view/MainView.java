@@ -4,6 +4,10 @@
  */
 package view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Rachi
@@ -15,6 +19,13 @@ public class MainView extends javax.swing.JFrame {
      */
     public MainView() {
         initComponents();
+        
+        jButton1.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            cambiarImagenFondo("/img/arena.jpg");
+        }
+        });
     }
 
     /**
@@ -55,4 +66,10 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
+    
+    public void cambiarImagenFondo(String rutaImagen) {
+        ImageIcon nuevaImagen = new ImageIcon(getClass().getResource(rutaImagen));
+        jLabel1.setIcon(nuevaImagen);
+    }
 }
+
