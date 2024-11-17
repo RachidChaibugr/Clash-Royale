@@ -16,6 +16,7 @@ public class Controller {
 
     public Controller(MainView view) {
         this.view = view;
+        view.setVisible(true);
         initController();
     }
     
@@ -25,6 +26,7 @@ public class Controller {
     
     private void iniciarBatalla(){
         view.cambiarImagenFondo("/img/arena.jpg");
+        view.getjButton1().setVisible(false);
     }
     
     
