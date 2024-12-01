@@ -72,7 +72,6 @@ public class Tropa implements Carta{
         this.velocidadMovimiento = velocidadMovimiento;
         this.rangoAtaque = rangoAtaque;
         this.velocidadAtaque = velocidadAtaque;
-        this.tipo= TipoCarta.TROPA;
     }
     
     public Tropa(){

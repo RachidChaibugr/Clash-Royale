@@ -28,7 +28,6 @@ public class Estructura implements Carta{
         this.perdidaVida = perdidaVida;
         this.rangoAtaque = rangoAtaque;
         this.velocidadAtaque = velocidadAtaque;
-        this.tipo = TipoCarta.ESTRUCTURA;
     }
 
     public Estructura() {

@@ -97,6 +97,15 @@ public class Mazo {
         return estructuras;
     }
     
+    public boolean cartaDerrotada(){
+        for(Carta carta : mazo){
+            if(carta.getPuntosSalud() == 0){
+                return true;
+            }
+        }
+        return false;
+    }
+    
     
     
 }
