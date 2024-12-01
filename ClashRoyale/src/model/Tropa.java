@@ -8,7 +8,7 @@ package model;
  *
  * @author Rachi
  */
-public class Tropa {
+public class Tropa implements Carta{
     public static final int PUNTOS_SALUD = 1;
     public static final int DANIO = 1;
     public static final int VELOCIDAD_MOVIMIENTO = 1;

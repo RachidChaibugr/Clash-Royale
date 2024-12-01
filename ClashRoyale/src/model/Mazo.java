@@ -17,18 +17,18 @@ public class Mazo {
     
     private boolean mezclado;
     
-    private Queue<Object> mazo = new LinkedList<>();
+    private Queue<Carta> mazo = new LinkedList<>();
     
 
     public Mazo() {
         this.mezclado = false;
     }
 
-    public Queue<Object> getMazo() {
+    public Queue<Carta> getMazo() {
         return mazo;
     }
 
-    public boolean aniadirCarta(Object carta){
+    public boolean aniadirCarta(Carta carta){
         if(mazo.size() < MAX_CARTAS && !mazo.contains(carta)){
             mazo.add(carta);
             mezclado = false;
@@ -37,7 +37,7 @@ public class Mazo {
         return false;
     }
     
-    public boolean eliminarCarta(Object carta){
+    public boolean eliminarCarta(Carta carta){
         if(mazo.contains(carta)){
             mazo.remove(carta);
             mezclado = false;
@@ -48,15 +48,15 @@ public class Mazo {
     
     public Object sacarCarta(){
         if(!mezclado){
-            List<Object> aux = new ArrayList<>(mazo);
+            List<Carta> aux = new ArrayList<>(mazo);
             Collections.shuffle(aux);
             mazo.clear();
-            for(Object carta : aux){
+            for(Carta carta : aux){
                 mazo.add(carta);
             }
             mezclado = true;
         }
-        Object carta = mazo.poll();
+        Carta carta = mazo.poll();
         mazo.add(carta);
         return carta;
     }
@@ -67,12 +67,13 @@ public class Mazo {
         sb.append("Mazo{");
         sb.append("mezclado=").append(mezclado);
         sb.append(", mazo=\n");
-        for(Object carta : mazo){
+        for(Carta carta : mazo){
             sb.append(carta.toString()).append("\n");
         }
         sb.append('}');
         return sb.toString();
     }
+    
     
     
     

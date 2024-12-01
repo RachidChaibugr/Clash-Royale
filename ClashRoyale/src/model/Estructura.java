@@ -8,7 +8,7 @@ package model;
  *
  * @author Rachi
  */
-public class Estructura {
+public class Estructura implements Carta{
     public static final int PUNTOS_SALUD = 1;
     public static final int DANIO = 1;
     public static final int PERDIDA_VIDA = 1;
