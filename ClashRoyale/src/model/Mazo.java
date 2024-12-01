@@ -87,6 +87,15 @@ public class Mazo {
         return mayorSalud;
     }
     
+    public List<Estructura> getEstructuras(){
+        List<Estructura> estructuras = new ArrayList<>();
+        for(Carta carta : mazo){
+            if(carta.getTipo() == TipoCarta.ESTRUCTURA){
+                estructuras.add((Estructura) carta);
+            }
+        }
+        return estructuras;
+    }
     
     
     

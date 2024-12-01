@@ -20,7 +20,7 @@ public class Estructura implements Carta{
     private int perdidaVida;
     private int rangoAtaque;
     private int velocidadAtaque;
-    private TipoCarta tipo;
+    private final TipoCarta tipo = TipoCarta.ESTRUCTURA;
 
     public Estructura(int puntosSalud, int danio, int perdidaVida, int rangoAtaque, int velocidadAtaque) {
         this.puntosSalud = puntosSalud;

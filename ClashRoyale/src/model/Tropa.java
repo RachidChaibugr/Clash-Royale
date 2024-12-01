@@ -20,7 +20,7 @@ public class Tropa implements Carta{
     private int velocidadMovimiento;
     private int rangoAtaque;
     private int velocidadAtaque;
-    private TipoCarta tipo;
+    private final TipoCarta tipo = TipoCarta.TROPA;
 
     public TipoCarta getTipo() {
         return tipo;
