@@ -8,7 +8,7 @@ package model;
  *
  * @author Rachi
  */
-public class Tropa {
+public class Tropa implements Carta{
     public static final int PUNTOS_SALUD = 1;
     public static final int DANIO = 1;
     public static final int VELOCIDAD_MOVIMIENTO = 1;
@@ -20,7 +20,7 @@ public class Tropa {
     private int velocidadMovimiento;
     private int rangoAtaque;
     private int velocidadAtaque;
-    private TipoCarta tipo;
+    private final TipoCarta tipo = TipoCarta.TROPA;
 
     public TipoCarta getTipo() {
         return tipo;
@@ -72,7 +72,6 @@ public class Tropa {
         this.velocidadMovimiento = velocidadMovimiento;
         this.rangoAtaque = rangoAtaque;
         this.velocidadAtaque = velocidadAtaque;
-        this.tipo= TipoCarta.TROPA;
     }
     
     public Tropa(){

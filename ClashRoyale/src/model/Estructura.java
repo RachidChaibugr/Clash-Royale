@@ -8,7 +8,7 @@ package model;
  *
  * @author Rachi
  */
-public class Estructura {
+public class Estructura implements Carta{
     public static final int PUNTOS_SALUD = 1;
     public static final int DANIO = 1;
     public static final int PERDIDA_VIDA = 1;
@@ -20,7 +20,7 @@ public class Estructura {
     private int perdidaVida;
     private int rangoAtaque;
     private int velocidadAtaque;
-    private TipoCarta tipo;
+    private final TipoCarta tipo = TipoCarta.ESTRUCTURA;
 
     public Estructura(int puntosSalud, int danio, int perdidaVida, int rangoAtaque, int velocidadAtaque) {
         this.puntosSalud = puntosSalud;
@@ -28,7 +28,6 @@ public class Estructura {
         this.perdidaVida = perdidaVida;
         this.rangoAtaque = rangoAtaque;
         this.velocidadAtaque = velocidadAtaque;
-        this.tipo = TipoCarta.ESTRUCTURA;
     }
 
     public Estructura() {
