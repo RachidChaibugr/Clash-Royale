@@ -46,7 +46,7 @@ public class Mazo {
         return false;
     }
     
-    public Object sacarCarta(){
+    public Carta sacarCarta(){
         if(!mezclado){
             List<Carta> aux = new ArrayList<>(mazo);
             Collections.shuffle(aux);
@@ -74,7 +74,18 @@ public class Mazo {
         return sb.toString();
     }
     
-    
+    public Carta getCartaMayorVida(){
+        Carta mayorSalud = null;
+        int maxVida = Integer.MIN_VALUE;
+        
+        for(Carta carta : mazo){
+            if(carta.getPuntosSalud() < maxVida){
+                maxVida = carta.getPuntosSalud();
+                mayorSalud = carta;
+            }
+        }
+        return mayorSalud;
+    }
     
     
     
